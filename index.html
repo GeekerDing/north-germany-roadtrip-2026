@@ -388,6 +388,71 @@
       color: var(--blue);
     }
 
+    .distance-panel {
+      margin: 20px 0 22px;
+    }
+
+    .distance-panel > p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .distance-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .distance-card {
+      padding: 13px;
+      border: 1px solid #ded7cb;
+      border-radius: 8px;
+      background: #fffdf8;
+    }
+
+    .distance-card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .segment-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .segment-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 6px 0;
+      border-bottom: 1px solid #eee6d9;
+      color: #4b554e;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .segment-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .segment-list strong {
+      flex: 0 0 auto;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    .distance-total {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #d8d1c5;
+      color: var(--green);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
     .footer-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -412,6 +477,10 @@
       .day-body,
       .footer-grid {
         grid-template-columns: 1fr;
+      }
+
+      .distance-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .places {
@@ -461,6 +530,10 @@
       }
 
       .places {
+        grid-template-columns: 1fr;
+      }
+
+      .distance-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -529,10 +602,72 @@
         <ul>
           <li>出发满电，Day 1 中途按车机在 A5 / A7 沿线补电。</li>
           <li>到 Hamburg 后优先用 Wandsbek Supercharger 补到约 75-85%，第二天出城去北海更稳。</li>
+          <li>最长几段是 Day 1 约 480 km、Day 4 的 Eidersperrwerk → Wiefelstede 约 294 km、Day 5 返程约 433 km。</li>
           <li>北海边尽量订带充电的住宿，去 Westerhever 前不要低电量。</li>
           <li>Day 4 渡轮和 Altes Land 是风景线，出发前尽量有 50% 以上。</li>
           <li>最终以 Tesla 车机实时规划和站点状态为准。</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="panel distance-panel" id="distance-table">
+      <h2>分段公里数</h2>
+      <p>约数，按开车路线估算；不含实时绕路、停车找位和渡轮等待。超充不作为固定行程点，你可以按这些长段自己决定在哪里补电。</p>
+      <div class="distance-grid">
+        <div class="distance-card">
+          <h3>6/3 周三</h3>
+          <ul class="segment-list">
+            <li><span>Neu-Anspach → Hamburg 朋友家</span><strong>约 480 km</strong></li>
+            <li><span>Neu-Anspach → Wandsbek 超充</span><strong>约 481 km</strong></li>
+            <li><span>Wandsbek 超充 → 朋友家</span><strong>约 2 km</strong></li>
+          </ul>
+          <div class="distance-total">直达约 480 km；经 Wandsbek 约 483 km</div>
+        </div>
+        <div class="distance-card">
+          <h3>6/4 周四</h3>
+          <ul class="segment-list">
+            <li><span>Hamburg 朋友家 → Friedrichstadt</span><strong>约 139 km</strong></li>
+            <li><span>Friedrichstadt → Husum Hafen</span><strong>约 16 km</strong></li>
+            <li><span>Husum Hafen → Parkhotel Residenz</span><strong>约 43 km</strong></li>
+          </ul>
+          <div class="distance-total">本日约 198 km</div>
+        </div>
+        <div class="distance-card">
+          <h3>6/5 周五</h3>
+          <ul class="segment-list">
+            <li><span>酒店 → Ordinger Strand</span><strong>约 3 km</strong></li>
+            <li><span>Ordinger Strand → Dünen-Therme</span><strong>约 1 km</strong></li>
+            <li><span>Dünen-Therme → 酒店</span><strong>约 1 km</strong></li>
+            <li><span>酒店 → Westerhever</span><strong>约 17 km</strong></li>
+            <li><span>Westerhever → Multimar Wattforum</span><strong>约 26 km</strong></li>
+            <li><span>Multimar Wattforum → 酒店</span><strong>约 27 km</strong></li>
+          </ul>
+          <div class="distance-total">本地轻松线约 6 km；天气窗口线约 71 km</div>
+        </div>
+        <div class="distance-card">
+          <h3>6/6 周六</h3>
+          <ul class="segment-list">
+            <li><span>酒店 → Tönning Hafen</span><strong>约 27 km</strong></li>
+            <li><span>Tönning → Eidersperrwerk</span><strong>约 11 km</strong></li>
+            <li><span>Eidersperrwerk → Wiefelstede</span><strong>约 294 km</strong></li>
+            <li><span>酒店 → Glückstadt</span><strong>约 110 km</strong></li>
+            <li><span>Glückstadt → Wischhafen 渡轮段</span><strong>约 7 km</strong></li>
+            <li><span>Wischhafen → Stade</span><strong>约 30 km</strong></li>
+            <li><span>Stade → Jork</span><strong>约 23 km</strong></li>
+            <li><span>Jork → Wiefelstede</span><strong>约 162 km</strong></li>
+          </ul>
+          <div class="distance-total">默认慢线约 331 km；渡轮长线约 336 km + 等船</div>
+        </div>
+        <div class="distance-card">
+          <h3>6/7 周日</h3>
+          <ul class="segment-list">
+            <li><span>Wiefelstede → Bad Zwischenahn</span><strong>约 14 km</strong></li>
+            <li><span>Bad Zwischenahn → Neu-Anspach</span><strong>约 433 km</strong></li>
+            <li><span>Wiefelstede → Oldenburg</span><strong>约 20 km</strong></li>
+            <li><span>Oldenburg → Neu-Anspach</span><strong>约 417 km</strong></li>
+          </ul>
+          <div class="distance-total">湖边线约 448 km；Oldenburg 线约 438 km</div>
+        </div>
       </div>
     </section>
 
@@ -558,7 +693,7 @@
           <div class="notes">
             <h4>执行建议</h4>
             <p>
-              朋友家地址：Schweinfurthweg 6, 22043 Hamburg。若到 Hamburg 时电量低于 45-50%，先去 Wandsbek 超充补电再到朋友家；如果电量足够，直接去朋友家，第二天早上再按车机规划补电。
+              朋友家地址：Schweinfurthweg 6, 22043 Hamburg。今天直达约 480 km；如果最后去 Wandsbek 超充再到朋友家，总计约 483 km。若到 Hamburg 时电量低于 45-50%，先去 Wandsbek 超充补电再到朋友家；如果电量足够，直接去朋友家，第二天早上再按车机规划补电。
             </p>
           </div>
         </div>
@@ -615,7 +750,7 @@
           <div class="notes">
             <h4>场景重点</h4>
             <p>
-              这天只安排两个轻停留：Friedrichstadt 看荷兰式山墙、小桥和运河；Husum 看港口、市场广场和北弗里西亚城市气质。晚上到 Parkhotel Residenz 入住，地址：Strandläuferweg 11, 25826 Sankt Peter-Ording。
+              这天约 198 km：Hamburg 到 Friedrichstadt 约 139 km，Friedrichstadt 到 Husum 约 16 km，Husum 到酒店约 43 km。只安排两个轻停留：Friedrichstadt 看荷兰式山墙、小桥和运河；Husum 看港口、市场广场和北弗里西亚城市气质。晚上到 Parkhotel Residenz 入住，地址：Strandläuferweg 11, 25826 Sankt Peter-Ording。
             </p>
           </div>
         </div>
@@ -695,7 +830,7 @@
           <div class="notes">
             <h4>执行建议</h4>
             <p>
-              周五不安排换酒店。雨小就海边 + Westerhever；雨大就 Dünen-Therme，或开到 Tönning 的 Multimar Wattforum 看 Wattenmeer 展览。晚上继续住 Parkhotel Residenz。
+              周五不安排换酒店。轻松本地线约 6 km；如果去 Westerhever + Multimar Wattforum，全天约 71 km。雨小就海边 + Westerhever；雨大就 Dünen-Therme，或开到 Tönning 的 Multimar Wattforum 看 Wattenmeer 展览。晚上继续住 Parkhotel Residenz。
             </p>
           </div>
         </div>
@@ -765,7 +900,7 @@
           <div class="notes">
             <h4>关键提醒</h4>
             <p>
-              默认不走 Glückstadt 渡轮，避免坏天气下开车和排队过多。下午目标是 Wemkendorfer Weg 6, 26215 Wiefelstede 朋友家；只有当天精神好、天气稳定、愿意多开一段时，再走渡轮 + Stade + Altes Land 的长线。
+              默认慢线约 331 km，其中 Eidersperrwerk 到 Wiefelstede 约 294 km，是这天真正的长段。默认不走 Glückstadt 渡轮，避免坏天气下开车和排队过多。下午目标是 Wemkendorfer Weg 6, 26215 Wiefelstede 朋友家；只有当天精神好、天气稳定、愿意多开一段时，再走渡轮 + Stade + Altes Land 的长线，约 336 km 加等船时间。
             </p>
           </div>
         </div>
@@ -833,7 +968,7 @@
           <div class="notes">
             <h4>执行建议</h4>
             <p>
-              Bad Zwischenahn 离 Wiefelstede 很近，适合作为返程前 90 分钟的湖边收尾：湖岸、Kurpark、咖啡。若你们仍想补 Oldenburg 市区，就用 Oldenburg 替代 Bad Zwischenahn，不要两个都塞。
+              经 Bad Zwischenahn 返程约 448 km；如果改走 Oldenburg，约 438 km。Bad Zwischenahn 离 Wiefelstede 很近，适合作为返程前 90 分钟的湖边收尾：湖岸、Kurpark、咖啡。若你们仍想补 Oldenburg 市区，就用 Oldenburg 替代 Bad Zwischenahn，不要两个都塞。
             </p>
           </div>
         </div>

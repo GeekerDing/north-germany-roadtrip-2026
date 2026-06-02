@@ -476,104 +476,6 @@
       overflow-wrap: anywhere;
     }
 
-    .battery-panel {
-      margin: 20px 0 22px;
-    }
-
-    .battery-panel > p {
-      margin: 0 0 14px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .battery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-    }
-
-    .battery-card {
-      padding: 13px;
-      border: 1px solid #ded7cb;
-      border-radius: 8px;
-      background: #fffdf8;
-    }
-
-    .battery-card h3 {
-      margin: 0 0 8px;
-      font-size: 16px;
-      line-height: 1.25;
-    }
-
-    .battery-flow {
-      display: grid;
-      gap: 8px;
-      margin-top: 10px;
-    }
-
-    .battery-step {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px;
-      align-items: center;
-      padding: 8px;
-      border: 1px solid #eee6d9;
-      border-radius: 8px;
-      background: #f8f4ec;
-    }
-
-    .battery-step b {
-      display: block;
-      font-size: 13px;
-      line-height: 1.25;
-      overflow-wrap: anywhere;
-    }
-
-    .battery-step span {
-      display: block;
-      margin-top: 3px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .soc {
-      min-width: 58px;
-      text-align: right;
-      color: var(--ink);
-      font-weight: 800;
-    }
-
-    .soc-bar {
-      grid-column: 1 / -1;
-      height: 7px;
-      overflow: hidden;
-      border-radius: 999px;
-      background: #e2ded6;
-    }
-
-    .soc-fill {
-      display: block;
-      height: 100%;
-      border-radius: inherit;
-      background: var(--green);
-    }
-
-    .soc-fill.warn {
-      background: #c6952f;
-    }
-
-    .soc-fill.low {
-      background: var(--brick);
-    }
-
-    .battery-note {
-      margin-top: 10px;
-      color: #4b554e;
-      font-size: 13px;
-      line-height: 1.45;
-      overflow-wrap: anywhere;
-    }
-
     .footer-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -601,10 +503,6 @@
       }
 
       .distance-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .battery-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
@@ -738,10 +636,6 @@
         grid-template-columns: 1fr;
       }
 
-      .battery-grid {
-        grid-template-columns: 1fr;
-      }
-
       .segment-list li {
         display: grid;
         grid-template-columns: 1fr;
@@ -751,21 +645,6 @@
 
       .segment-list strong {
         white-space: normal;
-      }
-
-      .battery-step {
-        grid-template-columns: 1fr;
-        gap: 6px;
-        padding: 10px;
-      }
-
-      .soc {
-        min-width: 0;
-        text-align: left;
-      }
-
-      .soc-bar {
-        height: 8px;
       }
 
       .footer-grid {
@@ -824,15 +703,15 @@
       <div class="route-node"><b>Husum</b><span>港口与北弗里西亚</span></div>
       <div class="route-node"><b>Parkhotel Residenz</b><span>SPO 连住两晚</span></div>
       <div class="route-node"><b>Westerhever</b><span>天气窗口再去</span></div>
-      <div class="route-node"><b>Stade / Brinkum</b><span>6/6 老城与补电</span></div>
+      <div class="route-node"><b>Stade / Oldenburg</b><span>6/6 老城与人文</span></div>
       <div class="route-node"><b>Wiefelstede</b><span>第二位朋友家</span></div>
       <div class="route-node"><b>Neu-Anspach</b><span>返回</span></div>
     </div>
 
     <div class="quick-actions">
-      <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Neu-Anspach&destination=Schweinfurthweg%206%2C%2022043%20Hamburg&waypoints=Tesla%20Supercharger%20Hamburg-Wandsbek%2C%20Helbingtwiete%204%2C%2022047%20Hamburg&travelmode=driving" target="_blank" rel="noopener">打开 Day 1 导航</a>
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Neu-Anspach&destination=Schweinfurthweg%206%2C%2022043%20Hamburg&travelmode=driving" target="_blank" rel="noopener">打开 Day 1 导航</a>
       <a class="btn blue" href="https://www.google.com/maps/dir/?api=1&origin=Schweinfurthweg%206%2C%2022043%20Hamburg&destination=Parkhotel%20Residenz%2C%20Strandl%C3%A4uferweg%2011%2C%2025826%20Sankt%20Peter-Ording&waypoints=Friedrichstadt%20Marktplatz%7CHusum%20Hafen&travelmode=driving" target="_blank" rel="noopener">打开北海慢节奏段</a>
-      <a class="btn secondary" href="https://www.google.com/maps/dir/?api=1&origin=Wemkendorfer%20Weg%206%2C%2026215%20Wiefelstede&destination=Neu-Anspach&waypoints=Bad%20Zwischenahn%7CTesla%20Supercharger%20Bergkamen%7CTesla%20Supercharger%20Wilnsdorf&travelmode=driving" target="_blank" rel="noopener">打开返程充电路线</a>
+      <a class="btn secondary" href="https://www.google.com/maps/dir/?api=1&origin=Wemkendorfer%20Weg%206%2C%2026215%20Wiefelstede&destination=Neu-Anspach&waypoints=Bad%20Zwischenahn&travelmode=driving" target="_blank" rel="noopener">打开周日返程路线</a>
     </div>
   </header>
 
@@ -844,148 +723,35 @@
           这是一条公路旅行路线，不是购物路线。第一天用高速完成转场；之后把驾驶本身变成体验，重点看北德的低地景观、堤坝、灯塔、红砖港口、运河小城、渡轮、果园和湖区。
         </p>
         <ul>
-          <li>Hamburg 不安排游玩，Day 1 直接到 Schweinfurthweg 6 朋友家，必要时先去 Wandsbek Tesla 超充。</li>
+          <li>Hamburg 不安排游玩，Day 1 直接到 Schweinfurthweg 6 朋友家；油车版只需要中途服务区休息和加油。</li>
           <li>Day 2 到 St. Peter-Ording 后直接入住 Parkhotel Residenz，连住两晚，把行程变成度假基地。</li>
           <li>Day 3 根据天气二选一：晴/小雨去海边和 Westerhever；雨大就 Dünen-Therme + Multimar Wattforum。</li>
-          <li>Day 4 按 6/6 新方案走 Elmshorn 超充、Stade Old Town、Brinkum 超充、Oldenburg，再到 Wiefelstede 朋友家。</li>
+          <li>Day 4 不绕路：Parkhotel 直接去 Stade 老城，再去 Oldenburg / Wiefelstede 朋友家。</li>
         </ul>
       </div>
       <div class="panel">
-        <h2>Tesla 充电原则</h2>
+        <h2>油车执行原则</h2>
         <ul>
-          <li>出发满电，Day 1 中途按车机在 A5 / A7 沿线补电。</li>
-          <li>到 Hamburg 后优先用 Wandsbek Supercharger 补到约 75-85%，第二天出城去北海更稳。</li>
-          <li>最长几段是 Day 1 约 480 km、Day 4 的 Stade / Brinkum / Oldenburg 方向约 349-369 km、Day 5 返程约 452 km。</li>
-          <li>北海边尽量订带充电的住宿，去 Westerhever 前不要低电量。</li>
-          <li>6/6 按最新截图：酒店 61% 出发，Elmshorn 27% 充 7 分钟，Stade 36%，Brinkum 10% 充 24 分钟，到 Oldenburg 70%。</li>
-          <li>最终以 Tesla 车机实时规划和站点状态为准。</li>
+          <li>Day 1 出发前加满油；A5 / A7 长途段只按精神状态休息，不为服务点绕路。</li>
+          <li>北海段里程都不紧张，重点放在停车、天气窗口、餐厅营业时间和周末路况。</li>
+          <li>Day 4 直接走 Stade → Oldenburg / Wiefelstede，删掉所有不必要绕路点。</li>
+          <li>Day 5 返程前在 Bad Zwischenahn 或高速服务区简单补油即可。</li>
+          <li>餐厅都建议出发前一天再看营业时间；周五、周六晚餐最好提前订位。</li>
         </ul>
-      </div>
-    </section>
-
-    <section class="panel battery-panel" id="battery-reference">
-      <h2>Tesla 电量参考</h2>
-      <p>按你提供的 Tesla 路线截图记录；这是参考电量，不是固定充电命令。实际电量会受天气、速度、载重、空调、轮胎和车辆版本影响，出发当天以车机为准。</p>
-      <div class="battery-grid">
-        <div class="battery-card">
-          <h3>6/3 Neu-Anspach → Hamburg</h3>
-          <div class="battery-flow">
-            <div class="battery-step">
-              <div><b>Neu-Anspach 出发</b><span>起步电量</span></div>
-              <div class="soc">100%</div>
-              <div class="soc-bar"><span class="soc-fill" style="width: 100%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Hannover-Altwarmbüchen</b><span>到达约 18% · 充电约 7 分钟</span></div>
-              <div class="soc">18%</div>
-              <div class="soc-bar"><span class="soc-fill low" style="width: 18%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Hamburg 朋友家</b><span>到达截图约 10%</span></div>
-              <div class="soc">10%</div>
-              <div class="soc-bar"><span class="soc-fill low" style="width: 10%"></span></div>
-            </div>
-          </div>
-          <p class="battery-note">10% 到达偏紧。更舒服的做法是在 Hannover 多充几分钟，或到 Hamburg 后直接去 Wandsbek 超充补到第二天够用。</p>
-        </div>
-        <div class="battery-card">
-          <h3>6/4 Hamburg → Parkhotel</h3>
-          <div class="battery-flow">
-            <div class="battery-step">
-              <div><b>Hamburg 朋友家出发</b><span>截图起步电量</span></div>
-              <div class="soc">80%</div>
-              <div class="soc-bar"><span class="soc-fill" style="width: 80%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Elmshorn Supercharger</b><span>到达约 64% · 充电约 35 分钟</span></div>
-              <div class="soc">64%</div>
-              <div class="soc-bar"><span class="soc-fill" style="width: 64%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Parkhotel Residenz</b><span>到达截图约 70%</span></div>
-              <div class="soc">70%</div>
-              <div class="soc-bar"><span class="soc-fill" style="width: 70%"></span></div>
-            </div>
-          </div>
-          <p class="battery-note">这张截图更像 Hamburg 到 SPO 的快线参考；如果当天仍绕 Friedrichstadt / Husum，车机会重新计算，建议到酒店至少 50% 以上。</p>
-        </div>
-        <div class="battery-card">
-          <h3>6/6 Parkhotel → Stade → Brinkum → Oldenburg</h3>
-          <div class="battery-flow">
-            <div class="battery-step">
-              <div><b>Parkhotel Residenz 出发</b><span>最新截图起步电量</span></div>
-              <div class="soc">61%</div>
-              <div class="soc-bar"><span class="soc-fill" style="width: 61%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Elmshorn Supercharger</b><span>到达约 27% · 充电约 7 分钟</span></div>
-              <div class="soc">27%</div>
-              <div class="soc-bar"><span class="soc-fill warn" style="width: 27%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Stade Old Town</b><span>到达最新截图约 36%</span></div>
-              <div class="soc">36%</div>
-              <div class="soc-bar"><span class="soc-fill warn" style="width: 36%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Brinkum Supercharger</b><span>到达约 10% · 充电约 24 分钟</span></div>
-              <div class="soc">10%</div>
-              <div class="soc-bar"><span class="soc-fill low" style="width: 10%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Oldenburg</b><span>到达最新截图约 70%</span></div>
-              <div class="soc">70%</div>
-              <div class="soc-bar"><span class="soc-fill" style="width: 70%"></span></div>
-            </div>
-          </div>
-          <p class="battery-note">这版比上一版稳很多：Brinkum 充 24 分钟后到 Oldenburg 约 70%。如果最后还去 Wiefelstede 朋友家，Oldenburg 后再多约 21 km，电量仍然充裕。</p>
-        </div>
-        <div class="battery-card">
-          <h3>6/7 Wiefelstede → Neu-Anspach</h3>
-          <div class="battery-flow">
-            <div class="battery-step">
-              <div><b>Wiefelstede 朋友家出发</b><span>截图起步电量</span></div>
-              <div class="soc">80%</div>
-              <div class="soc-bar"><span class="soc-fill" style="width: 80%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Bad Zwischenahn</b><span>到达截图约 73%</span></div>
-              <div class="soc">73%</div>
-              <div class="soc-bar"><span class="soc-fill" style="width: 73%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Bergkamen Supercharger</b><span>到达约 17% · 充电约 5 分钟</span></div>
-              <div class="soc">17%</div>
-              <div class="soc-bar"><span class="soc-fill low" style="width: 17%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Wilnsdorf Supercharger</b><span>到达约 10% · 充电约 6 分钟</span></div>
-              <div class="soc">10%</div>
-              <div class="soc-bar"><span class="soc-fill low" style="width: 10%"></span></div>
-            </div>
-            <div class="battery-step">
-              <div><b>Neu-Anspach 到达</b><span>截图约 15%</span></div>
-              <div class="soc">15%</div>
-              <div class="soc-bar"><span class="soc-fill low" style="width: 15%"></span></div>
-            </div>
-          </div>
-          <p class="battery-note">这条返程线按截图可行但偏紧。Bergkamen 和 Wilnsdorf 都是短充，若下雨、逆风或高速开得快，建议每站多充 3-5 分钟，保证最后到家不低于 15%。</p>
-        </div>
       </div>
     </section>
 
     <section class="panel distance-panel" id="distance-table">
       <h2>分段公里数</h2>
-      <p>约数，按开车路线估算；不含实时绕路、停车找位和渡轮等待。超充不作为固定行程点，你可以按这些长段自己决定在哪里补电。</p>
+      <p>约数，按开车路线估算；不含实时绕路、停车找位和用餐时间。油车版不需要围绕补给规划，长段按休息和吃饭节奏决定停哪里。</p>
       <div class="distance-grid">
         <div class="distance-card">
           <h3>6/3 周三</h3>
           <ul class="segment-list">
             <li><span>Neu-Anspach → Hamburg 朋友家</span><strong>约 480 km</strong></li>
-            <li><span>Neu-Anspach → Wandsbek 超充</span><strong>约 481 km</strong></li>
-            <li><span>Wandsbek 超充 → 朋友家</span><strong>约 2 km</strong></li>
+            <li><span>中途服务区休息</span><strong>1-2 次</strong></li>
           </ul>
-          <div class="distance-total">直达约 480 km；经 Wandsbek 约 483 km</div>
+          <div class="distance-total">本日约 480 km</div>
         </div>
         <div class="distance-card">
           <h3>6/4 周四</h3>
@@ -1011,26 +777,94 @@
         <div class="distance-card">
           <h3>6/6 周六</h3>
           <ul class="segment-list">
-            <li><span>Parkhotel → Elmshorn 超充</span><strong>约 114 km</strong></li>
-            <li><span>Elmshorn 超充 → Stade Old Town</span><strong>约 82 km</strong></li>
-            <li><span>Stade Old Town → Brinkum 超充</span><strong>约 104 km</strong></li>
-            <li><span>Brinkum 超充 → Oldenburg</span><strong>约 48 km</strong></li>
+            <li><span>Parkhotel → Stade Old Town</span><strong>约 196 km</strong></li>
+            <li><span>Stade Old Town → Oldenburg</span><strong>约 151 km</strong></li>
             <li><span>Oldenburg → Wiefelstede 朋友家</span><strong>约 21 km</strong></li>
-            <li><span>旧慢线：Tönning / Eider → Wiefelstede</span><strong>约 331 km</strong></li>
+            <li><span>少开车备选：Tönning / Eider → Wiefelstede</span><strong>约 331 km</strong></li>
           </ul>
-          <div class="distance-total">到 Oldenburg 约 349 km；到 Wiefelstede 约 369 km</div>
+          <div class="distance-total">到 Oldenburg 约 347 km；到 Wiefelstede 约 368 km</div>
         </div>
         <div class="distance-card">
           <h3>6/7 周日</h3>
           <ul class="segment-list">
             <li><span>Wiefelstede → Bad Zwischenahn</span><strong>约 14 km</strong></li>
-            <li><span>Bad Zwischenahn → Bergkamen 超充</span><strong>约 207 km</strong></li>
-            <li><span>Bergkamen → Wilnsdorf 超充</span><strong>约 125 km</strong></li>
-            <li><span>Wilnsdorf → Neu-Anspach</span><strong>约 105 km</strong></li>
+            <li><span>Bad Zwischenahn → Neu-Anspach</span><strong>约 433 km</strong></li>
             <li><span>Wiefelstede → Oldenburg</span><strong>约 20 km</strong></li>
             <li><span>Oldenburg → Neu-Anspach</span><strong>约 417 km</strong></li>
           </ul>
-          <div class="distance-total">按截图充电线约 452 km；Oldenburg 线约 438 km</div>
+          <div class="distance-total">Bad Zwischenahn 线约 447 km；Oldenburg 线约 438 km</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel distance-panel" id="classic-food">
+      <h2>经典打卡与餐厅</h2>
+      <p>按“第一次去北德也值得、但不过度游客化”的标准选。餐厅不是购物目的，只作为每天路线里的舒适落点；出发前一天确认营业时间，周五和周六晚餐尽量订位。</p>
+      <div class="distance-grid">
+        <div class="distance-card">
+          <h3>6/3 Hamburg 到达</h3>
+          <ul class="segment-list">
+            <li><span>经典打卡：Lüneburger Heide / Wilsede</span><strong>时间早再停</strong></li>
+            <li><span>餐厅：跟朋友晚餐，不单独安排 Hamburg 景点</span><strong>轻松</strong></li>
+          </ul>
+          <div class="place-actions">
+            <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Wilsede%2C%20L%C3%BCneburger%20Heide" target="_blank" rel="noopener">Wilsede 定位</a>
+          </div>
+        </div>
+        <div class="distance-card">
+          <h3>6/4 Friedrichstadt / Husum</h3>
+          <ul class="segment-list">
+            <li><span>经典打卡：Friedrichstadt Marktplatz + Grachten</span><strong>运河小城</strong></li>
+            <li><span>经典打卡：Husum Hafen + Schloss vor Husum</span><strong>红砖港口</strong></li>
+            <li><span>餐厅：Dragseth's Gasthof, Husum</span><strong>老客栈</strong></li>
+            <li><span>备选：Holländische Stube, Friedrichstadt</span><strong>运河边</strong></li>
+          </ul>
+          <div class="place-actions">
+            <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Dragseth%27s%20Gasthof%2C%20Zingel%2011%2C%2025813%20Husum" target="_blank" rel="noopener">Dragseth 定位</a>
+            <a class="mini-btn ghost" href="https://www.dragseths-gasthof.de/" target="_blank" rel="noopener">Dragseth 官方</a>
+            <a class="mini-btn ghost" href="https://www.friedrichstadt.de/gastro/www-hollaendischestube-de" target="_blank" rel="noopener">Holländische Stube</a>
+          </div>
+        </div>
+        <div class="distance-card">
+          <h3>6/5 St. Peter-Ording</h3>
+          <ul class="segment-list">
+            <li><span>经典打卡：Ordinger Strand + Pfahlbauten</span><strong>必留</strong></li>
+            <li><span>经典打卡：Westerhever Leuchtturm</span><strong>天气好去</strong></li>
+            <li><span>雨天：Dünen-Therme 或 Multimar Wattforum</span><strong>稳</strong></li>
+            <li><span>餐厅：Strandbar 54° Nord</span><strong>海边高脚屋</strong></li>
+          </ul>
+          <div class="place-actions">
+            <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Strandbar%2054%C2%B0%20Nord%2C%20Strandweg%20999%2C%2025826%20Sankt%20Peter-Ording" target="_blank" rel="noopener">Strandbar 定位</a>
+            <a class="mini-btn ghost" href="https://www.strandbar-54grad-nord.de/" target="_blank" rel="noopener">Strandbar 官方</a>
+            <a class="mini-btn ghost" href="https://www.st-peter-ording.de/pfahlbauten/" target="_blank" rel="noopener">Pfahlbauten 官方</a>
+          </div>
+        </div>
+        <div class="distance-card">
+          <h3>6/6 Stade / Oldenburg</h3>
+          <ul class="segment-list">
+            <li><span>经典打卡：Stade Hansehafen + Hökerstraße</span><strong>主停留</strong></li>
+            <li><span>经典打卡：Oldenburg Schlossgarten / Innenstadt</span><strong>见朋友前</strong></li>
+            <li><span>餐厅：Ratskeller Oldenburg</span><strong>市中心</strong></li>
+            <li><span>备选：Knechthausen, Stade</span><strong>晚餐需订位</strong></li>
+          </ul>
+          <div class="place-actions">
+            <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Ratskeller%20Oldenburg%2C%20Markt%201%2C%2026122%20Oldenburg" target="_blank" rel="noopener">Ratskeller 定位</a>
+            <a class="mini-btn ghost" href="https://www.oldenburg-tourismus.de/a-ratskeller-oldenburg" target="_blank" rel="noopener">Ratskeller 信息</a>
+            <a class="mini-btn ghost" href="https://www.knechthausen.de/" target="_blank" rel="noopener">Knechthausen 官方</a>
+          </div>
+        </div>
+        <div class="distance-card">
+          <h3>6/7 Bad Zwischenahn</h3>
+          <ul class="segment-list">
+            <li><span>经典打卡：Zwischenahner Meer + Kurpark</span><strong>湖边收尾</strong></li>
+            <li><span>备选：Park der Gärten</span><strong>园艺经典</strong></li>
+            <li><span>餐厅：Spieker Ammerländer Bauernhaus</span><strong>本地味道</strong></li>
+          </ul>
+          <div class="place-actions">
+            <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Spieker%20Ammerl%C3%A4nder%20Bauernhaus%2C%20Bad%20Zwischenahn" target="_blank" rel="noopener">Spieker 定位</a>
+            <a class="mini-btn ghost" href="https://spiekergaststaette.de/" target="_blank" rel="noopener">Spieker 官方</a>
+            <a class="mini-btn ghost" href="https://www.park-der-gaerten.de/besuch-planen/oeffnungszeiten-tickets-buchungen" target="_blank" rel="noopener">Park der Gärten</a>
+          </div>
         </div>
       </div>
     </section>
@@ -1040,43 +874,30 @@
         <div class="day-head">
           <div class="date"><strong>6/3</strong><span>周三</span></div>
           <div class="head-copy">
-            <h3>Neu-Anspach → Tesla Supercharger Wandsbek → 朋友家</h3>
-            <p>快速北上，今天的目标是到 Hamburg 朋友家；城市游览不安排，充电只做顺路补给。</p>
+            <h3>Neu-Anspach → Hamburg 朋友家</h3>
+            <p>快速北上，今天的目标是到 Hamburg 朋友家；城市游览不安排，油车中途按精神状态休息。</p>
             <div class="tag-row">
               <span class="tag">转场日</span>
               <span class="tag blue">高速 A5 / A7</span>
-              <span class="tag brick">Wandsbek 超充</span>
+              <span class="tag brick">油车直达</span>
             </div>
           </div>
         </div>
         <div class="day-body">
           <div class="link-group">
             <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Neu-Anspach&destination=Schweinfurthweg%206%2C%2022043%20Hamburg&travelmode=driving" target="_blank" rel="noopener">直接到朋友家：Neu-Anspach → Schweinfurthweg 6</a>
-            <a class="btn secondary" href="https://www.google.com/maps/dir/?api=1&origin=Neu-Anspach&destination=Schweinfurthweg%206%2C%2022043%20Hamburg&waypoints=Tesla%20Supercharger%20Hamburg-Wandsbek%2C%20Helbingtwiete%204%2C%2022047%20Hamburg&travelmode=driving" target="_blank" rel="noopener">带超充：Neu-Anspach → Wandsbek Supercharger → 朋友家</a>
+            <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Wilsede%2C%20L%C3%BCneburger%20Heide" target="_blank" rel="noopener">时间早的自然停留：Lüneburger Heide / Wilsede</a>
           </div>
           <div class="notes">
             <h4>执行建议</h4>
             <p>
-              朋友家地址：Schweinfurthweg 6, 22043 Hamburg。今天直达约 480 km；如果最后去 Wandsbek 超充再到朋友家，总计约 483 km。若到 Hamburg 时电量低于 45-50%，先去 Wandsbek 超充补电再到朋友家；如果电量足够，直接去朋友家，第二天早上再按车机规划补电。
+              朋友家地址：Schweinfurthweg 6, 22043 Hamburg。今天直达约 480 km，建议出发前加满油，中间休息 1-2 次即可。不要为了打卡把 Day 1 变重；如果比预期早很多到北部，再考虑 Lüneburger Heide / Wilsede 这种自然短停。
             </p>
           </div>
         </div>
         <div class="nearby">
           <h4>附近推荐停留</h4>
           <div class="places">
-            <div class="place">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg/960px-Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" alt="Tesla Supercharger 充电桩示意图" loading="lazy" referrerpolicy="no-referrer">
-              <div class="place-copy">
-                <h5>Tesla Supercharger Hamburg-Wandsbek</h5>
-                <p>离朋友家很近的官方超充点：Helbingtwiete 4, 22047 Hamburg。适合到 Hamburg 后补电，第二天去北海不用低电量出城。照片为 Supercharger 示意图。</p>
-                <div class="place-meta">12 个桩 · 最高 250 kW · 24/7</div>
-                <div class="place-actions">
-                  <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Tesla%20Supercharger%20Hamburg-Wandsbek%2C%20Helbingtwiete%204%2C%2022047%20Hamburg" target="_blank" rel="noopener">Google Maps 定位</a>
-                  <a class="mini-btn ghost" href="https://www.tesla.com/de_DE/findus/location/supercharger/HamburgWandsbekdesupercharger" target="_blank" rel="noopener">Tesla 官方</a>
-                  <a class="mini-btn ghost" href="https://commons.wikimedia.org/wiki/File:Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" target="_blank" rel="noopener">照片来源</a>
-                </div>
-              </div>
-            </div>
             <div class="place">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/L%C3%BCneburger_Heide_029.jpg/960px-L%C3%BCneburger_Heide_029.jpg" alt="Lüneburger Heide 荒原景观" loading="lazy" referrerpolicy="no-referrer">
               <div class="place-copy">
@@ -1246,44 +1067,31 @@
         <div class="day-head">
           <div class="date"><strong>6/6</strong><span>周六</span></div>
           <div class="head-copy">
-            <h3>Parkhotel Residenz → Elmshorn → Stade Old Town → Brinkum → Oldenburg / Wiefelstede</h3>
-            <p>按最新 6/6 Tesla 截图：上午从 Parkhotel Residenz 退房，经 Elmshorn 短充，去 Stade Old Town 停留，再到 Brinkum 补电后到 Oldenburg / Wiefelstede。</p>
+            <h3>Parkhotel Residenz → Stade Old Town → Oldenburg / Wiefelstede</h3>
+            <p>油车版不绕路：上午从 Parkhotel Residenz 退房，直去 Stade 老城停留，再到 Oldenburg / Wiefelstede。</p>
             <div class="tag-row">
-              <span class="tag blue">Elmshorn 超充</span>
+              <span class="tag blue">少绕路</span>
               <span class="tag brick">Stade Old Town</span>
-              <span class="tag">Brinkum 补电</span>
               <span class="tag">Oldenburg / Wiefelstede</span>
             </div>
           </div>
         </div>
         <div class="day-body">
           <div class="link-group">
-            <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Parkhotel%20Residenz%2C%20Strandl%C3%A4uferweg%2011%2C%2025826%20Sankt%20Peter-Ording&destination=Oldenburg%2C%20Niedersachsen&waypoints=Tesla%20Supercharger%20Elmshorn%7CH%C3%B6kerstra%C3%9Fe%2031%2C%2021682%20Stade%7CTesla%20Supercharger%20Brinkum&travelmode=driving" target="_blank" rel="noopener">按最新截图到 Oldenburg：Parkhotel → Elmshorn → Stade → Brinkum → Oldenburg</a>
-            <a class="btn secondary" href="https://www.google.com/maps/dir/?api=1&origin=Parkhotel%20Residenz%2C%20Strandl%C3%A4uferweg%2011%2C%2025826%20Sankt%20Peter-Ording&destination=Wemkendorfer%20Weg%206%2C%2026215%20Wiefelstede&waypoints=Tesla%20Supercharger%20Elmshorn%7CH%C3%B6kerstra%C3%9Fe%2031%2C%2021682%20Stade%7CTesla%20Supercharger%20Brinkum%7COldenburg%2C%20Niedersachsen&travelmode=driving" target="_blank" rel="noopener">到朋友家：Parkhotel → Elmshorn → Stade → Brinkum → Oldenburg → Wiefelstede</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Parkhotel%20Residenz%2C%20Strandl%C3%A4uferweg%2011%2C%2025826%20Sankt%20Peter-Ording&destination=Oldenburg%2C%20Niedersachsen&waypoints=H%C3%B6kerstra%C3%9Fe%2031%2C%2021682%20Stade&travelmode=driving" target="_blank" rel="noopener">到 Oldenburg：Parkhotel → Stade Old Town → Oldenburg</a>
+            <a class="btn secondary" href="https://www.google.com/maps/dir/?api=1&origin=Parkhotel%20Residenz%2C%20Strandl%C3%A4uferweg%2011%2C%2025826%20Sankt%20Peter-Ording&destination=Wemkendorfer%20Weg%206%2C%2026215%20Wiefelstede&waypoints=H%C3%B6kerstra%C3%9Fe%2031%2C%2021682%20Stade%7COldenburg%2C%20Niedersachsen&travelmode=driving" target="_blank" rel="noopener">到朋友家：Parkhotel → Stade → Oldenburg → Wiefelstede</a>
             <a class="btn secondary" href="https://www.google.com/maps/dir/?api=1&origin=Parkhotel%20Residenz%2C%20Strandl%C3%A4uferweg%2011%2C%2025826%20Sankt%20Peter-Ording&destination=Wemkendorfer%20Weg%206%2C%2026215%20Wiefelstede&waypoints=T%C3%B6nning%20Hafen%7CEidersperrwerk&travelmode=driving" target="_blank" rel="noopener">旧慢线备选：Tönning Hafen → Eidersperrwerk → Wiefelstede</a>
           </div>
           <div class="notes">
             <h4>关键提醒</h4>
             <p>
-              按最新截图到 Oldenburg 约 349 km，车机显示 4 小时 56 分、2 次充电；如果继续到 Wemkendorfer Weg 6, 26215 Wiefelstede，约 369 km。Tesla 截图参考：酒店 61% 出发，Elmshorn 到达约 27% 并充 7 分钟，Stade 到达约 36%，Brinkum 到达约 10% 并充 24 分钟，Oldenburg 到达约 70%。
+              到 Oldenburg 约 347 km；如果继续到 Wemkendorfer Weg 6, 26215 Wiefelstede，约 368 km。Stade 是这天最值得停的经典小城，Oldenburg 则作为见朋友前的城市收尾；若天气很差，就缩短 Stade 停留，直接去 Oldenburg / Wiefelstede。
             </p>
           </div>
         </div>
         <div class="nearby">
           <h4>附近推荐停留</h4>
           <div class="places">
-            <div class="place">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg/960px-Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" alt="Tesla Supercharger 充电桩示意图" loading="lazy" referrerpolicy="no-referrer">
-              <div class="place-copy">
-                <h5>Elmshorn Supercharger</h5>
-                <p>6/6 最新截图里的第一处短充点。酒店 61% 出发时，Tesla 参考到 Elmshorn 约 27%，充约 7 分钟后继续去 Stade。</p>
-                <div class="place-meta">约 114 km · 短充约 7 分钟</div>
-                <div class="place-actions">
-                  <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Tesla%20Supercharger%20Elmshorn" target="_blank" rel="noopener">Google Maps 定位</a>
-                  <a class="mini-btn ghost" href="https://commons.wikimedia.org/wiki/File:Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" target="_blank" rel="noopener">照片来源</a>
-                </div>
-              </div>
-            </div>
             <div class="place">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Stade%2C_Hansehafen_--_2018_--_2961.jpg/960px-Stade%2C_Hansehafen_--_2018_--_2961.jpg" alt="Stade Hansehafen 老港" loading="lazy" referrerpolicy="no-referrer">
               <div class="place-copy">
@@ -1297,14 +1105,14 @@
               </div>
             </div>
             <div class="place">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg/960px-Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" alt="Tesla Supercharger 充电桩示意图" loading="lazy" referrerpolicy="no-referrer">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Museum_altes_land.jpg?width=960" alt="Jork Altes Land 农舍建筑" loading="lazy" referrerpolicy="no-referrer">
               <div class="place-copy">
-                <h5>Brinkum Supercharger</h5>
-                <p>最新截图里的第二处补电点。Stade 后到 Brinkum 约 104 km，Tesla 参考到达约 10%，充约 24 分钟后到 Oldenburg 约 70%。</p>
-                <div class="place-meta">约 104 km · 充电约 24 分钟</div>
+                <h5>Altes Land / Jork</h5>
+                <p>如果你们想在 Stade 附近多一点本地风景，Altes Land 是果园、堤坝和北德农舍气质的经典短绕路；天气差就跳过。</p>
+                <div class="place-meta">建议 30-60 分钟 · 可选短绕路</div>
                 <div class="place-actions">
-                  <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Tesla%20Supercharger%20Brinkum" target="_blank" rel="noopener">Google Maps 定位</a>
-                  <a class="mini-btn ghost" href="https://commons.wikimedia.org/wiki/File:Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" target="_blank" rel="noopener">照片来源</a>
+                  <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Jork%2C%20Altes%20Land" target="_blank" rel="noopener">Google Maps 定位</a>
+                  <a class="mini-btn ghost" href="https://commons.wikimedia.org/wiki/File:Museum_altes_land.jpg" target="_blank" rel="noopener">照片来源</a>
                 </div>
               </div>
             </div>
@@ -1312,7 +1120,7 @@
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Oldenburg_-_Schlossgarten_08.jpg/960px-Oldenburg_-_Schlossgarten_08.jpg" alt="Oldenburg Schlossgarten" loading="lazy" referrerpolicy="no-referrer">
               <div class="place-copy">
                 <h5>Oldenburg Schlossgarten / Innenstadt</h5>
-                <p>最新截图终点到 Oldenburg 约 70% 电量。若还要去 Wiefelstede 朋友家，继续约 21 km，电量余量仍然舒服。</p>
+                <p>Oldenburg 最适合作为见朋友前的轻松城市收尾：Schlossgarten、Schlossplatz、市中心和 Ratskeller 都集中，停车后步行即可。</p>
                 <div class="place-meta">建议 45-90 分钟 · 或直接去朋友家</div>
                 <div class="place-actions">
                   <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Schlossgarten%20Oldenburg" target="_blank" rel="noopener">Google Maps 定位</a>
@@ -1328,8 +1136,8 @@
         <div class="day-head">
           <div class="date"><strong>6/7</strong><span>周日</span></div>
           <div class="head-copy">
-            <h3>Wiefelstede → Bad Zwischenahn → Bergkamen → Wilnsdorf → Neu-Anspach</h3>
-            <p>从 Wiefelstede 朋友家出发，上午用 Bad Zwischenahn 湖边收尾，然后按 Tesla 截图经 Bergkamen 和 Wilnsdorf 两次短充返程。</p>
+            <h3>Wiefelstede → Bad Zwischenahn → Neu-Anspach</h3>
+            <p>从 Wiefelstede 朋友家出发，上午用 Bad Zwischenahn 湖边收尾，然后一路返程。</p>
             <div class="tag-row">
               <span class="tag brick">Wiefelstede 出发</span>
               <span class="tag blue">湖区收尾</span>
@@ -1339,31 +1147,19 @@
         </div>
         <div class="day-body">
           <div class="link-group">
-            <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Wemkendorfer%20Weg%206%2C%2026215%20Wiefelstede&destination=Neu-Anspach&waypoints=Bad%20Zwischenahn%7CTesla%20Supercharger%20Bergkamen%7CTesla%20Supercharger%20Wilnsdorf&travelmode=driving" target="_blank" rel="noopener">返程充电线：Wiefelstede → Bad Zwischenahn → Bergkamen → Wilnsdorf → Neu-Anspach</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Wemkendorfer%20Weg%206%2C%2026215%20Wiefelstede&destination=Neu-Anspach&waypoints=Bad%20Zwischenahn&travelmode=driving" target="_blank" rel="noopener">返程线：Wiefelstede → Bad Zwischenahn → Neu-Anspach</a>
             <a class="btn secondary" href="https://www.google.com/maps/dir/?api=1&origin=Wemkendorfer%20Weg%206%2C%2026215%20Wiefelstede&destination=Neu-Anspach&waypoints=Oldenburg%2C%20Niedersachsen&travelmode=driving" target="_blank" rel="noopener">城市替代：Wiefelstede → Oldenburg → Neu-Anspach</a>
           </div>
           <div class="notes">
             <h4>执行建议</h4>
             <p>
-              按截图返程约 452 km：Wiefelstede 80% 出发，Bad Zwischenahn 约 73%，Bergkamen 到达约 17% 充 5 分钟，Wilnsdorf 到达约 10% 充 6 分钟，到家约 15%。Bad Zwischenahn 离 Wiefelstede 很近，适合作为返程前 90 分钟的湖边收尾；若你们想补 Oldenburg 市区，就用 Oldenburg 替代 Bad Zwischenahn，不要两个都塞。
+              Bad Zwischenahn 线约 447 km，Oldenburg 线约 438 km。Bad Zwischenahn 离 Wiefelstede 很近，适合作为返程前 90 分钟的湖边收尾；若你们想补 Oldenburg 市区，就用 Oldenburg 替代 Bad Zwischenahn，不要两个都塞。油车版返程只需在高速服务区按休息节奏加油。
             </p>
           </div>
         </div>
         <div class="nearby">
           <h4>附近推荐停留</h4>
           <div class="places">
-            <div class="place">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg/960px-Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" alt="Tesla Supercharger 充电桩示意图" loading="lazy" referrerpolicy="no-referrer">
-              <div class="place-copy">
-                <h5>Bergkamen Supercharger</h5>
-                <p>返程第一处短充点。截图参考到达约 17%，充约 5 分钟；如果天气差或高速开得快，建议多充几分钟。</p>
-                <div class="place-meta">Bad Zwischenahn 后约 207 km · 短充点</div>
-                <div class="place-actions">
-                  <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Tesla%20Supercharger%20Bergkamen" target="_blank" rel="noopener">Google Maps 定位</a>
-                  <a class="mini-btn ghost" href="https://commons.wikimedia.org/wiki/File:Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" target="_blank" rel="noopener">照片来源</a>
-                </div>
-              </div>
-            </div>
             <div class="place">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Bootsverleih_zwischenahner_meer.jpg/960px-Bootsverleih_zwischenahner_meer.jpg" alt="Zwischenahner Meer 船码头" loading="lazy" referrerpolicy="no-referrer">
               <div class="place-copy">
@@ -1389,14 +1185,14 @@
               </div>
             </div>
             <div class="place">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg/960px-Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" alt="Tesla Supercharger 充电桩示意图" loading="lazy" referrerpolicy="no-referrer">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Schlossplatz_Oldenburg.JPG?width=960" alt="Oldenburg Schlossplatz" loading="lazy" referrerpolicy="no-referrer">
               <div class="place-copy">
-                <h5>Wilnsdorf Supercharger</h5>
-                <p>返程第二处短充点。截图参考到达约 10%，充约 6 分钟，到家约 15%。这里最好不要压得太低。</p>
-                <div class="place-meta">Bergkamen 后约 125 km · 到家前补电</div>
+                <h5>Oldenburg Innenstadt</h5>
+                <p>如果周六没有时间看 Oldenburg，周日可以把 Bad Zwischenahn 替换成 Schlossplatz、Schlossgarten 和市中心短走。</p>
+                <div class="place-meta">建议 60-90 分钟 · 与湖边二选一</div>
                 <div class="place-actions">
-                  <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Tesla%20Supercharger%20Wilnsdorf" target="_blank" rel="noopener">Google Maps 定位</a>
-                  <a class="mini-btn ghost" href="https://commons.wikimedia.org/wiki/File:Tesla_Supercharger_Station_-_Germany_-_A9_-_2014.jpg" target="_blank" rel="noopener">照片来源</a>
+                  <a class="mini-btn" href="https://www.google.com/maps/search/?api=1&query=Schlossplatz%20Oldenburg" target="_blank" rel="noopener">Google Maps 定位</a>
+                  <a class="mini-btn ghost" href="https://commons.wikimedia.org/wiki/File:Schlossplatz_Oldenburg.JPG" target="_blank" rel="noopener">照片来源</a>
                 </div>
               </div>
             </div>
@@ -1409,13 +1205,13 @@
       <div class="panel">
         <h2>住宿建议</h2>
         <p class="small">
-          Day 1 住 Hamburg 朋友家：Schweinfurthweg 6, 22043 Hamburg。Day 2 和 Day 3 连住 Parkhotel Residenz：Strandläuferweg 11, 25826 Sankt Peter-Ording。Day 4 经 Stade / Brinkum / Oldenburg 到 Wiefelstede 朋友家：Wemkendorfer Weg 6, 26215 Wiefelstede。这样只搬两次，天气不好也不赶。
+          Day 1 住 Hamburg 朋友家：Schweinfurthweg 6, 22043 Hamburg。Day 2 和 Day 3 连住 Parkhotel Residenz：Strandläuferweg 11, 25826 Sankt Peter-Ording。Day 4 经 Stade / Oldenburg 到 Wiefelstede 朋友家：Wemkendorfer Weg 6, 26215 Wiefelstede。这样只搬两次，天气不好也不赶。
         </p>
       </div>
       <div class="panel">
         <h2>路线规则</h2>
         <p class="small">
-          雨天慢版每天只保留一个主活动。周五不换酒店；周六按最新截图走 Elmshorn 超充、Stade Old Town、Brinkum 超充、Oldenburg / Wiefelstede。周日按截图经 Bad Zwischenahn、Bergkamen 和 Wilnsdorf 两次短充返程。
+          雨天慢版每天只保留一个主活动。周五不换酒店；周六走 Stade Old Town、Oldenburg / Wiefelstede。周日用 Bad Zwischenahn 湖边收尾后返程；如果天气差，就把湖边换成 Oldenburg 市区短走。
         </p>
       </div>
       <div class="panel">
